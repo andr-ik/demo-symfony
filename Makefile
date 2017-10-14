@@ -24,3 +24,4 @@ _dm:
 	 eval "$(docker-machine env demo)"
 _pow:
 	echo "http://192.168.99.100:80" > ~/.pow/demo
+	echo "http://192.168.99.100:8025" > ~/.pow/mail
