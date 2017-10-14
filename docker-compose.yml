@@ -11,7 +11,7 @@ web:
 
 php:
     container_name: php
-    image: php:7.1-fpm
+    build: ./.docker
     ports:
         - "9000:9000"
     volumes:
