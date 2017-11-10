@@ -8,6 +8,14 @@ framework:
     profiler:
         collect: false
 
+doctrine:
+    dbal:
+        default_connection: postgres
+        connections:
+            postgres:
+                driver: pdo_sqlite
+                path: "%kernel.cache_dir%/database.sqlite"
+
 web_profiler:
     toolbar: false
     intercept_redirects: false

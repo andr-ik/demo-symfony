@@ -1,0 +1,7 @@
+services:
+    default_controller:
+        class: UserInterface\WebBundle\Controller\DefaultController
+        arguments:
+            - "@mailer"
+            - "@twig"
+            - "@doctrine.dbal.postgres_connection"
